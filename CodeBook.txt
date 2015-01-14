@@ -1,0 +1,281 @@
+			Codebook meandatawide.txt
+
+subject                  : int
+	subject ID code
+		1..30
+
+activity                 : chr
+	activity identifier
+		laying
+		sitting
+		standing
+		walking
+		walking.downstairs
+		walking.upstairs
+
+tbodyacc.mean.x          : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyacc.mean.y          : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyacc.mean.z          : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyacc.std.x           : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyacc.std.y           : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyacc.std.z           : num
+	mean normalized value
+		-1…00..1.00
+
+tgravityacc.mean.x       : num
+	mean normalized value
+		-1…00..1.00
+
+tgravityacc.mean.y       : num
+	mean normalized value
+		-1…00..1.00
+
+tgravityacc.mean.z       : num
+	mean normalized value
+		-1…00..1.00
+
+tgravityacc.std.x        : num
+	mean normalized value
+		-1…00..1.00
+
+tgravityacc.std.y        : num
+	mean normalized value
+		-1…00..1.00
+
+tgravityacc.std.z        : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerk.mean.x      : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerk.mean.y      : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerk.mean.z      : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerk.std.x       : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerk.std.y       : num
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerk.std.z       : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyro.mean.x         : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyro.mean.y         : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyro.mean.z         : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyro.std.x          : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyro.std.y          : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyro.std.z          : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerk.mean.x     : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerk.mean.y     : num
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerk.mean.z     : num  
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerk.std.x      : num  
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerk.std.y      : num  
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerk.std.z      : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccmag.mean         : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccmag.std          : num 
+	mean normalized value
+		-1…00..1.00
+
+tgravityaccmag.mean      : num 
+	mean normalized value
+		-1…00..1.00
+
+tgravityaccmag.std       : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerkmag.mean     : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodyaccjerkmag.std      : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodygyromag.mean        : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodygyromag.std         : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerkmag.mean    : num 
+	mean normalized value
+		-1…00..1.00
+
+tbodygyrojerkmag.std     : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyacc.mean.x          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyacc.mean.y          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyacc.mean.z          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyacc.std.x           : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyacc.std.y           : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyacc.std.z           : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccjerk.mean.x      : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccjerk.mean.y      : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccjerk.mean.z      : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccjerk.std.x       : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccjerk.std.y       : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccjerk.std.z       : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodygyro.mean.x         : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodygyro.mean.y         : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodygyro.mean.z         : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodygyro.std.x          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodygyro.std.y          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodygyro.std.z          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccmag.mean         : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodyaccmag.std          : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodybodyaccjerkmag.mean : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodybodyaccjerkmag.std  : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodybodygyromag.mean    : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodybodygyromag.std     : num 
+	mean normalized value
+		-1…00..1.00
+
+fbodybodygyrojerkmag.mean: num 
+	mean normalized value
+		-1…00..1.00
+
+fbodybodygyrojerkmag.std : num 
+	mean normalized value
+		-1…00..1.00
+
+
+Note for all variables except subject and activity, the values in the file are the means of the normalized values extracted from the UCI HAR data sets averaged across subjects and activities. For the original definitions of the raw data variables see the relevant descriptions presented at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
