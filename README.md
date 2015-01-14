@@ -7,7 +7,7 @@ output: html_document
 
 ### Description
 
-Run_analysis.R is a script produced to satisfy the Project assignment of the Getting & Cleaning Data course from the Data Science Specialization. It takes various inputs from the UCI HAR data set and merges them to produce a wide format tidy set of the means of various measurements selected from the inputs. It then outputs these mean values with appropriate and descriptive variable names to a file called meandatawide.txt  
+Run_analysis.R is a script produced to satisfy the Project assignment of the Getting & Cleaning Data course from the Data Science Specialization. It takes various inputs from the UCI HAR data set and merges them to produce a wide format tidy set of the means of various measurements selected from the inputs. It then outputs these mean values with appropriate and descriptive variable names to a file called meandata.txt  
  
 ### Arguments
 
@@ -79,7 +79,7 @@ For detailed descriptions of these files and their contents see [here](http://ar
  
 ### Output
 
-1. meandatawide.txt  
+1. meandata.txt  
 
 The output file is placed in the working directory. It is a wide format tidy data set containing the mean values of the selected variables from the input data averaged by subject ID and activity. A detailed description of the ouput variables is given in the Codebook located in the run_analysis.R repo.  
 

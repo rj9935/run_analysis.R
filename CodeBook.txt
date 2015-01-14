@@ -1,4 +1,4 @@
-			Codebook meandatawide.txt
+			Codebook meandata.txt
 
 subject                  : int
 	subject ID code
