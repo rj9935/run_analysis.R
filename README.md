@@ -33,6 +33,7 @@ Step 2 removes all the non-relevant variables:
 Columns             <- grep("-mean\\(\\)|-std\\(\\)", names(data))
 data                <- data[ ,c(1, 2, Columns)]
 ```
+The definition of variables to keep implemented here is those containing either "-mean()" or "-std()" in the variable name. This is compliant with the spec. in the assignment but can be easily modified by changing the grep() instruction given in the line above. The first two columns explicitly included in the second line of code are the subject and activity.
 
 Step 3 sets meaningful activity labels:
 
@@ -40,6 +41,7 @@ Step 3 sets meaningful activity labels:
 activitylabels[,2]  <- gsub("_",".",tolower(activitylabels[,2]))
 data[,2]            <- activitylabels[data[,2], 2]
 ```
+The gsub() command replaces underscores by periods and sets all characters to lower case.
 
 Step 4 sets descriptive and appropriate variable labels:
 
@@ -48,6 +50,7 @@ names(data)         <- gsub("-",".",tolower(names(data)))
 names(data)         <- gsub("(","",names(data),fixed=TRUE)
 names(data)         <- gsub(")","",names(data),fixed=TRUE)
 ```
+The 1st gsub() command replaces underscores by periods and sets all characters to lower case. The other two gsub() commands remove the opening and closing brackets which are illegal in R variable names.
 
 Step 5 creates the tidy summary data set:
 
