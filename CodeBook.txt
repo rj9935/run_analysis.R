@@ -253,27 +253,27 @@ fbodyaccmag.std          : num
 	mean normalized value
 		-1…00..1.00
 
-fbodybodyaccjerkmag.mean : num 
+fbodyaccjerkmag.mean 	 : num 
 	mean normalized value
 		-1…00..1.00
 
-fbodybodyaccjerkmag.std  : num 
+fbodyaccjerkmag.std  	 : num 
 	mean normalized value
 		-1…00..1.00
 
-fbodybodygyromag.mean    : num 
+fbodygyromag.mean    	 : num 
 	mean normalized value
 		-1…00..1.00
 
-fbodybodygyromag.std     : num 
+fbodygyromag.std     	 : num 
 	mean normalized value
 		-1…00..1.00
 
-fbodybodygyrojerkmag.mean: num 
+fbodygyrojerkmag.mean	 : num 
 	mean normalized value
 		-1…00..1.00
 
-fbodybodygyrojerkmag.std : num 
+fbodygyrojerkmag.std 	 : num 
 	mean normalized value
 		-1…00..1.00
 

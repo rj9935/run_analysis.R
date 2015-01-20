@@ -78,10 +78,12 @@ data[,2]            <- activitylabels[data[,2], 2]
 ## Step 4: Appropriately label the data set with descriptive variable names 
 ## ------------------------------------------------------------------------
 
-## Re-case, replace the hyphens and remove the brackets from variable names
+## Re-case, replace the hyphens, remove the brackets from variable names and 
+## fix cases of "bodybody"
 names(data)         <- gsub("-",".",tolower(names(data)))
 names(data)         <- gsub("(","",names(data),fixed=TRUE)
 names(data)         <- gsub(")","",names(data),fixed=TRUE)
+names(data)         <- gsub("bodybody","body",names(data))
 
 ## Step 5: Create a tidy data set with mean(variable) by activity & subject
 ## ----------------------------------------------------------------------

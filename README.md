@@ -49,8 +49,10 @@ Step 4 sets descriptive and appropriate variable labels:
 names(data)         <- gsub("-",".",tolower(names(data)))
 names(data)         <- gsub("(","",names(data),fixed=TRUE)
 names(data)         <- gsub(")","",names(data),fixed=TRUE)
+names(data)         <- gsub("bodybody","body",names(data))
 ```
-The 1st gsub() command replaces underscores by periods and sets all characters to lower case. The other two gsub() commands remove the opening and closing brackets which are illegal in R variable names.
+The 1st gsub() command replaces hyphens by periods and sets all characters to lower case. The next two gsub() commands remove the opening and closing brackets which are illegal in R variable names. The final gsub() command
+fixes instances where some columns labels include "bodybody" instead of "body".
 
 Step 5 creates the tidy summary data set:
 
