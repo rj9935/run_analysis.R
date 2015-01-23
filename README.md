@@ -59,6 +59,9 @@ Step 5 creates the tidy summary data set:
 ```
 meandatawide <- ddply(data, c("subject","activity"), numcolwise(mean))
 ```
+Use of ddply() here makes the code very compact - some additional commented out code is provided in the script
+which calculates the same answer using nested for loops - this was used to verify that the ddply() technique
+is producing a correct answer.
 
 ### Usage
 
