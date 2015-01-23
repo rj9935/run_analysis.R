@@ -71,7 +71,8 @@ data                <- data[ ,c(1, 2, Columns)]
 ## -------------------------------------------------------------------------
 
 ## Modify the activity descriptors to lower case, replace underscores and then 
-## replace the activity codes in the data frame with the modified descriptors
+## replace the activity codes in the data frame with the modified descriptors by
+## using the activity code as an index into the vector of labels
 activitylabels[,2]  <- gsub("_",".",tolower(activitylabels[,2]))
 data[,2]            <- activitylabels[data[,2], 2]
 
@@ -79,7 +80,7 @@ data[,2]            <- activitylabels[data[,2], 2]
 ## ------------------------------------------------------------------------
 
 ## Re-case, replace the hyphens, remove the brackets from variable names and 
-## fix cases of "bodybody"
+## fix instances of "bodybody"
 names(data)         <- gsub("-",".",tolower(names(data)))
 names(data)         <- gsub("(","",names(data),fixed=TRUE)
 names(data)         <- gsub(")","",names(data),fixed=TRUE)
@@ -103,3 +104,30 @@ rm(testSubject, testy, testX, trainSubject, trainy, trainX, features,
    activitylabels, Subject, y, X, data)
 rm(testSubjectPath, testyPath, testXPath, trainSubjectPath, trainyPath, 
    trainXPath, featuresPath, activityPath, Columns)
+
+## The rest of this commented out code is to independently verify the results by 
+## a completely different method of calculation (using nested for loops) - 
+## essentially testing that the ddply() instruction above is actually doing what
+## it is supposed to. If the tidy data sets produced by the two methods are 
+## identical then the code below returns the value zero (which is does). 
+## NB in order to get this to work you need to uncomment it and comment out the 
+## two rm() instructions immediately above.
+## 
+## meandatawide2 <- meandatawide
+## check <- meandatawide
+## meandatawide2[,3:68] <- 0
+## check[,3:68] <- 1
+## labels <- c("laying","sitting","standing","walking",
+##             "walking.downstairs","walking.upstairs")
+
+## for (id in 1:30) {
+##     for (act in 1:6) {
+##         for (col in 3:68) {
+##             meandatawide2[(6*(id-1))+act, col] <- mean(data[data$subject==id & data$activity==labels[act],col])
+##             check[(6*(id-1))+act, col] <- meandatawide[(6*(id-1))+act, col] - meandatawide2[(6*(id-1))+act, col]
+##         }
+##     }    
+## }
+
+## Answer here should be zero if the results agree
+## sum(check[,3:68])
