@@ -1,7 +1,7 @@
 ---
 title: "Merge UCI HAR data sets, tidy and summarize"
 author: "Ray Jones"
-date: "January 14, 2015"
+date: "January 22, 2016"
 output: html_document
 ---
 
@@ -51,17 +51,14 @@ names(data)         <- gsub("(","",names(data),fixed=TRUE)
 names(data)         <- gsub(")","",names(data),fixed=TRUE)
 names(data)         <- gsub("bodybody","body",names(data))
 ```
-The 1st gsub() command replaces hyphens by periods and sets all characters to lower case. The next two gsub() commands remove the opening and closing brackets which are illegal in R variable names. The final gsub() command
-fixes instances where some columns labels include "bodybody" instead of "body".
+The 1st gsub() command replaces hyphens by periods and sets all characters to lower case. The next two gsub() commands remove the opening and closing brackets which are illegal in R variable names. The final gsub() command fixes instances where some columns labels include "bodybody" instead of "body".
 
 Step 5 creates the tidy summary data set:
 
 ```
-meandatawide <- ddply(data, c("subject","activity"), numcolwise(mean))
+meandatawide 		<- ddply(data, c("subject","activity"), numcolwise(mean))
 ```
-Use of ddply() here makes the code very compact - some additional commented out code is provided in the script
-which calculates the same answer using nested for loops - this was used to verify that the ddply() technique
-is producing a correct answer.
+Use of ddply() here makes the code very compact.
 
 ### Usage
 
